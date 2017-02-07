@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面login</title>
+		<!--<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/Font-Awesome-3.2.1/css/font-awesome.min.css">-->
+		<link rel="stylesheet" href="css/homepage.css">
+		<script type="text/javascript" src="assets/jquery-3.1.1.min.js" ></script>
+		<!--<script type="text/javascript" src="../dist/js/jquery.validate.js"></script>
+		<script type="text/javascript" src="../dist/js/messages_zh.js"></script>-->
+		<style>
+			.state{
+				color:#fa4678;
+				font-size: 12px;
+			}
+		</style>
+		<script>
+			$(function(){
+//				表单验证
+//				$("#commentForm").validate({
+//		  			rules:{
+//		  				username:{required:true,minlength:6},
+//		  				password:{required:true,minlength:6,maxlength:20}
+//		  			},
+//		  			messages:{
+//		  				username:{required:"请输入用户名",minlength:"用户名长度不能小于6位"},
+//		  				password:{required:"请输入密码",minlength:"密码长度不能小于6位",maxlength:"密码长度不能大于20位"}			  				
+//		  			}
+//				})
+				//JQ表单验证
+				var ok1=false;
+				var ok2=false;
+				//验证用户名
+				$("#username").focus(function(){
+					$(this).next().text('* 请输入用户名').addClass("state");
+				}).blur(function(){
+					if($(this).val().length<=6){
+						$(this).next().text("* 用户名长度至少6位").addClass("state");
+					}else{
+						$(this).next().text("").removeClass('state');
+						ok1=true;
+					}
+				});
+				//验证密码
+				$("#password").focus(function(){
+					$(this).next().text('* 请输入密码').addClass("state");
+				}).blur(function(){
+					if($(this).val().length>=6&&$(this).val().length<=20){
+						$(this).next().text("").removeClass('state');
+						ok2=true;						
+					}else{
+						$(this).next().text("* 密码长度6~20位").addClass("state");
+					}
+				})
+				
+			  	$(':button').click(function(){
+			  		if(ok1&&ok2){
+			  			$.post('register.php',{
+							username:$('[name=username]').val(),
+							password:$('[name=password]').val()
+						},function(response){
+							console.log(response);
+						})
+			  			alert("注册成功 ，请到登录页面登录")
+			  		}else{
+			  			alert("注册失败 ，重新注册")
+			  			return false;
+			  		}
+			  		
+//					if($("#username").length!=0){
+//						var ab=$.trim($("#username").val());//去空格
+//						console.log(ab.length)
+//					}
+			  	});
+			  		
+
+					
+					
+			  })
+		</script>
+	</head>
+
+	<body>
+		<div id='main'>
+			<div class="top">
+				<div class="top_left"><img src="css/img/注册logo.png"></div>
+				<div class="top_right">
+					<ul>
+						<li>已有账号？</li>
+						<li><a href="sign.html">立即登陆</a></li>
+						<li><a href="#">帮助中心</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="login">
+				<form id="commentForm">
+					<div >
+						<input type="text" placeholder="手机号码/邮箱/用户名" id="username" name="username">	
+						<span ></span>
+					</div>
+					<div>
+						<input type="password" placeholder="密码由6-20个数字和字母的组合" id="password" name="password">					
+						<span ></span>
+					</div>
+					<a href="#">会员注册协议</a>
+				</form>
+					<button id="submit" class="submit">同意协议并注册</button>
+			</div>
+			
+			<div class="bottom">
+				<img src="css/img/注册底部logo.png">
+			</div>
+		</div>
+	</body>
+
+</html>

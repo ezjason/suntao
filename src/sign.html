@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆页面sign</title>
+		<link rel="stylesheet" href="css/homepage.css">
+		<script src="assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					window.location.href="index.html";
+//					$.post('sign.php',{
+//						username:$('#username').val(),
+//						password:$("#password").val()
+//					},function(response){
+//						var $obj = eval('('+ response +')');
+//						if($obj.state){
+//							window.location.href='index.html';
+//						}else{
+//							$.alert($obj.message);
+//						}
+//					})
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id='sign'>
+			<div class="top">
+				<div class="top_left"><img src="css/img/注册logo.png"></div>
+				<div class="top_right">
+					<ul>
+						<li>沒有账号？</li>
+						<li><a href="login.html">立即注冊</a></li>
+						<li><a href="#">帮助中心</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="sign">
+				<form action="#">
+					<div class="wrap">
+						<div class="wrap-top"><span>账号登陆</span><span>手机动态码登陆</span></div>
+						<div class="wrap-middle">
+							<ul>
+								<li>
+									<form action="index.html" method="post">
+										<div class="message">
+											<input type="text" id="username placeholder="手机号码/邮箱/用户名">
+											<input type="password" id="password" placeholder="登录密码">
+										</div>
+										<div class="check">
+											<div>
+												<input type="checkbox" checked="checked">2周内自动登录												
+												<a href="#">忘记密码</a>
+											</div>
+										</div>
+										<div class='sign-in'>
+											<button type="button" id="btn">登录</button>
+										</div>
+									</form>
+								</li>
+							</ul>
+						</div>
+						<div class="wrap-bottom"><img src="css/img/平台登陆.png"></div>
+					</div>
+				</form>
+			</div>
+			
+			<div class="bottom">
+				<img src="css/img/注册底部logo.png">
+			</div>
+		</div>
+	</body>
+</html>

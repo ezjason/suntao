@@ -1,0 +1,47 @@
+#bigbody { background: #f5f5f5; padding-top: 20px; }
+
+#bigbody .buy { margin: 0 auto; width: 80%; background: white; height: 500px; }
+
+#bigbody .buy .buy-left { width: 48%; height: 100%; margin-right: 2%; float: left; }
+
+#bigbody .buy .buy-left .bigimg { padding: 0 30px; }
+
+#bigbody .buy .buy-left .smallimg .inner ul { list-style: none; }
+
+#bigbody .buy .buy-left .smallimg .inner ul li { float: left; }
+
+#bigbody .buy .buy-left .smallimg .inner ul li a img { display: block; width: 60px; height: 54px; border: 1px solid #e4e4e4; float: left; margin-right: 12px; border-radius: 2px; margin-top: 6px; text-align: center; }
+
+#bigbody .buy .buy-right { width: 50%; height: 100%; float: left; h3-color: #333; h3-font-size: 18px; h3-font-family: "microsoft yahei"; h3-line-height: 24px; }
+
+#bigbody .buy .buy-right .pit { width: 70px; height: 14px; line-height: 14px; display: block; font-size: 12px; color: #999; float: left; }
+
+#bigbody .buy .buy-right .mum { color: #f03468; font-size: 24px; font-weight: 600; line-height: 34px; }
+
+#bigbody .buy .buy-right .poor { color: #666; font-weight: 500; font-size: 14px; text-decoration: line-through; }
+
+#bigbody .buy .buy-right .clear .detial-number input { width: 24px; height: 18px; text-align: center; border: 1px solid #ccc; margin: 0; vertical-align: middle; outline: none; box-sizing: content-box; -webkit-appearance: textfield; text-rendering: auto; color: initial; letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block; }
+
+#bigbody .buy .buy-right .clear .detial-number a { display: inline-block; width: 20px; background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#f0f0f0)); text-align: center; padding: 2px; color: #000; text-decoration: none; cursor: pointer; font-weight: bolder; }
+
+#bigbody .buy .buy-right .btn .buynow { width: 140px; height: 46px; margin-right: 25px; line-height: 46px; font: 400 16px/44px 'microsoft yahei'; color: #f03468; border: 1px solid #f03468; background-color: #fff1f5; padding: 0 10px; cursor: pointer; display: inline-block; text-align: center; }
+
+#bigbody .buy .buy-right .btn .addcar { width: 140px; height: 46px; margin-right: 25px; line-height: 46px; font: 400 16px/44px 'microsoft yahei'; text-decoration: none; border: 1px solid #fa4678; background-color: #fa4678; display: inline-block; border-radius: 2px; text-align: center; color: #fff; }
+
+#bigbody .buy .buy-right h5 { color: #666; font-size: 14px; line-height: 30px; font-family: 'microsoft yahei'; }
+
+#bigbody .more { margin: 0 auto; width: 80%; height: 90%; }
+
+#bigbody .more .more-top { line-height: 44px; height: 44px; width: 100%; background: #000; opacity: .85; }
+
+#bigbody .more .more-top ul { list-style: none; }
+
+#bigbody .more .more-top ul .listyle { color: #f03468; background: white; }
+
+#bigbody .more .more-top ul li { float: left; padding: 0 20px; margin-right: 3px; font-size: 13px; font-weight: 600; color: white; cursor: hand; }
+
+#bigbody .more .more-dom { width: 100%; background: white; }
+
+#bigbody .more .more-dom .img { margin: 0 15%; }
+
+#bigbody .dibu { margin-left: 20px; }

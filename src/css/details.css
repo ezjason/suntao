@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.service-abd { display: none; position: absolute; left: 0; top: 50px; width: 220px; height: 462px; background-color: #f5f5f5; }
+
+.service-abd ul li { list-style: none; padding: 0 5px; }
+
+.service-abd ul li:hover { background: white; }
+
+.service-abd ul li:hover h2, .service-abd ul li:hover a { color: #ff3259; }
+
+.service-abd ul li:hover a:hover { color: #ff3259; font-weight: bold; }
+
+.service-abd h2 { line-height: 16px; }
+
+.service-abd h2 a { font-size: 14px; font-family: 微软雅黑; color: #333; }
+
+.service-abd p { display: block; font-weight: 400; font-size: 12px; height: 18px; line-height: 18px; border-bottom: 1px dotted #a0a0a0; padding-bottom: 12px; overflow: hidden; color: #a0a0a0; }
+
+.service-abd p a { color: #a0a0a0; }
+
+.allproduce:hover .service-abd { display: block; }
+
+.catalog { height: 60px; width: 100%; padding-left: 6%; line-height: 60px; }
+
+.catalog a { font-size: 12px; color: #666; }
+
+.catalog span { font-size: 12px; border: 1px solid #666; padding: 5px 15px; }
+
+.listbox { width: 100%; height: 2000px; padding-left: 6%; }
+
+.listbox .listbox-left { width: 15%; height: 70%; float: left; border: 1px solid #e4e4e4; }
+
+.listbox .listbox-left h2 { color: #666; background: #f7f7f7; height: 38px; line-height: 38px; font-size: 14px; padding-left: 10px; margin-top: 0; }
+
+.listbox .listbox-left .cat-father { padding-left: 10px; }
+
+.listbox .listbox-left .cat-father h3 { height: 44px; line-height: 44px; }
+
+.listbox .listbox-left .cat-father h3 a { font-size: 14px; color: #666; }
+
+.listbox .listbox-left .cat-father ul { border-bottom: 1px solid #f5f5f5; }
+
+.listbox .listbox-left .cat-father ul li { list-style: none; overflow: hidden; width: 128px; height: 24px; line-height: 24px; }
+
+.listbox .listbox-left .cat-father ul li a { color: #666; font-size: 12px; }
+
+.listbox .listbox-right { float: left; width: 70%; height: 99%; margin-left: 10px; }
+
+.listbox .listbox-right .choose { border: 1px solid #e4e4e4; border-radius: 2px; margin-bottom: 20px; position: relative; }
+
+.listbox .listbox-right .choose .title { height: 50px; line-height: 50px; }
+
+.listbox .listbox-right .choose .title div { float: left; position: absolute; font-size: 14px; }
+
+.listbox .listbox-right .choose .title div:first-of-type { left: 15px; }
+
+.listbox .listbox-right .choose .title div:last-of-type { right: 15px; }
+
+.listbox .listbox-right .choose .logo, .listbox .listbox-right .choose .price, .listbox .listbox-right .choose .sort { height: 65px; border-top: 1px solid #e4e4e4; }
+
+.listbox .listbox-right .choose .logo .logo-type, .listbox .listbox-right .choose .price .logo-type, .listbox .listbox-right .choose .sort .logo-type { float: left; height: 100%; width: 15%; background: #f7f7f7; line-height: 65px; text-align: center; }
+
+.listbox .listbox-right .choose .logo .logo-list, .listbox .listbox-right .choose .price .logo-list, .listbox .listbox-right .choose .sort .logo-list { float: left; }
+
+.listbox .listbox-right .choose .logo .logo-list ul li, .listbox .listbox-right .choose .price .logo-list ul li, .listbox .listbox-right .choose .sort .logo-list ul li { list-style: none; float: left; height: 20px; width: 110px; font-size: 14px; }
+
+.listbox .listbox-right .filter { border: 1px solid #e4e4e4; height: 40px; width: 100%; background: #f7f7f7; }
+
+.listbox .listbox-right .filter .filter-list { float: left; }
+
+.listbox .listbox-right .filter .filter-list .select { background: white; color: #ed386a; }
+
+.listbox .listbox-right .filter .filter-list ul { margin: 0px -40px; }
+
+.listbox .listbox-right .filter .filter-list ul li { float: left; list-style: none; height: 40px; line-height: 40px; width: 70px; border-right: 1px solid #e4e4e4; text-align: center; font-size: 14px; }
+
+.listbox .listbox-right .filter .filter-list ul li:hover { color: #ed386a; background: white; }
+
+.listbox .listbox-right .filter .filter-price { float: left; margin-left: 50px; line-height: 40px; }
+
+.listbox .listbox-right .filter .filter-price .button { height: 23px; width: 45px; background: white; border: none; }
+
+.listbox .listbox-right .filter .filter-price .button:hover { border: 1px solid #ed386a; color: #ed386a; }
+
+.listbox .listbox-right .filter .filter-price input { height: 15px; width: 35px; }
+
+.listbox .listbox-right .filter .filter-choose { float: left; line-height: 40px; }
+
+.listbox .listbox-right .goods { margin-top: 10px; width: 100%; height: 90%; }
+
+.listbox .listbox-right .goods .pagination { padding-top: 960px; height: 20px; width: 100%; text-align: center; }
+
+.listbox .listbox-right .goods .pagination .upage, .listbox .listbox-right .goods .pagination .next-page { padding: 3px 5px; border: 1px solid gainsboro; }
+
+.listbox .listbox-right .goods .wrap-ul { list-style: none; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li { width: 200px; height: 300px; border: 1px solid gainsboro; float: left; margin: 5px 10px; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li:hover { border: 1px solid #ED386A; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li .pik { color: #f03468; font-size: 16px; font-weight: bold; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li .dark { color: #999; font-size: 12px; text-decoration: line-through; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li a { color: #333; font-size: 12px; font-weight: bolder; }
+
+.sogo { height: 100px; width: 100%; padding: 0 27%; }
+
+.sogo .mysearch-bottom { width: 500px; height: 50px; background: #f7f7f7; padding: 2% 15%; }
+
+.sogo .mysearch-bottom .font span { color: #7d7d7d; font-size: 12px; }
+
+.sogo .mysearch-bottom .font span:first-of-type { color: #f03468; }
+
+.sogo .mysearch-bottom input { height: 31px; width: 330px; border: 2px solid #ff305f; }
+
+.sogo .mysearch-bottom input:last-of-type { color: white; width: 80px; background: #ff305f; margin-left: -8px; }

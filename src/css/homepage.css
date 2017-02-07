@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/*预处理
+	sass   less  stylus
+	编译sass文件所需工具：
+		gulp
+		gulp-sass
+*/
+a { text-decoration: none; }
+
+#main { padding: 10% 20%; width: 70%; height: 100%; margin: auto; }
+
+#main .top { width: 100%; }
+
+#main .top .top_left { width: 70%; float: left; }
+
+#main .top .top_right { float: left; width: 30%; }
+
+#main .top .top_right ul li { font-size: 13px; list-style: none; color: grey; float: left; }
+
+#main .top .top_right ul li:nth-of-type(2) { padding-right: 5px; font-weight: bold; }
+
+#main .top .top_right ul li:last-child { border-left: 1px solid gray; padding-left: 5px; font-weight: bold; }
+
+#main .top .top_right ul li a { color: #333333; }
+
+#main .login { margin-top: 5%; width: 20%; height: 20%; float: left; border: 1px solid gray; padding: 10% 40%; }
+
+#main .login a { color: deeppink; font-size: 10px; }
+
+#main .login div input { font-size: 10px; font-weight: 500; padding-left: 10px; height: 38px; width: 300px; margin: 15px; background-color: white; border: 1px solid gainsboro; color: black; }
+
+#main .login #submit { background-color: deeppink; border: none; color: white; height: 38px; width: 310px; margin: 15px; font-weight: bold; font-size: 15px; }
+
+#main .bottom { padding: 0 35%; }
+
+#sign { width: 100%; height: 100%; margin: auto; }
+
+#sign .top { width: 100%; }
+
+#sign .top .top_left { width: 60%; float: left; padding-left: 10%; margin-top: 2%; }
+
+#sign .top .top_right { float: left; margin-top: 2%; width: 30%; }
+
+#sign .top .top_right ul li { font-size: 13px; list-style: none; color: grey; float: left; }
+
+#sign .top .top_right ul li:nth-of-type(2) { padding-right: 5px; font-weight: bold; }
+
+#sign .top .top_right ul li:last-child { border-left: 1px solid gray; padding-left: 5px; font-weight: bold; }
+
+#sign .top .top_right ul li a { color: #333333; }
+
+#sign .sign { margin-top: 2%; float: left; width: 100%; height: 500px; background: url("../css/img/登陆背景.jpeg") no-repeat center; position: relative; }
+
+#sign .sign .wrap { background: white; width: 350px; position: absolute; right: 20%; top: 22px; }
+
+#sign .sign .wrap .wrap-top { width: 100%; height: 55px; border-bottom: 1px solid gainsboro; }
+
+#sign .sign .wrap .wrap-top span { line-height: 55px; padding: 0 40px; font-weight: 500; color: #999; font-size: 16px; }
+
+#sign .sign .wrap .wrap-middle li { list-style: none; }
+
+#sign .sign .wrap .wrap-middle li input { height: 32px; border: 1px solid #e5e5e5; padding-left: 10px; }
+
+#sign .sign .wrap .wrap-middle li .message input { margin-bottom: 20px; width: 70%; }
+
+#sign .sign .wrap .wrap-middle li .check { padding-bottom: 10px; color: #999; font-size: 12px; }
+
+#sign .sign .wrap .wrap-middle li .sign-in { width: 73%; }
+
+#sign .sign .wrap .wrap-middle li .sign-in #btn { background: deeppink; width: 100%; color: white; font-weight: bolder; border: 1px solid #e5e5e5; height: 30px; }
+
+#sign .sign .wrap .wrap-bottom { width: 100%; padding-left: 20px; }
+
+#sign .bottom { padding: 0 35%; }
+
+.index-top { height: 40px; width: 100%; background: gainsboro; padding-left: 6%; }
+
+.index-top .welcome { float: left; width: 70%; height: 40px; line-height: 40px; font-size: 12px; }
+
+.index-top .welcome a { color: red; }
+
+.index-top .mycar { width: 30%; float: left; height: 40px; line-height: 40px; font-size: 14px; }
+
+.index-top .mycar span { color: red; font-weight: bolder; }
+
+.index-search { padding-left: 6%; height: 180px; background: white; border-bottom: 3px solid #ff305f; }
+
+.index-search .search { height: 50%; padding-top: 3%; }
+
+.index-search .search .img { float: left; }
+
+.index-search .search .mysearch { float: left; padding-left: 100px; margin-right: 70px; }
+
+.index-search .search .mysearch input { height: 31px; width: 330px; border: 2px solid #ff305f; }
+
+.index-search .search .mysearch input:last-of-type { color: white; width: 80px; background: #ff305f; margin-left: -8px; }
+
+.index-search .list { height: 28%; }
+
+.index-search .list .allproduce { float: left; height: 50px; line-height: 60px; padding: 0 60px; font-size: 16px; font-weight: 700; font-family: "Microsoft Yahei",Verdana,Tahoma,Arial; position: relative; }
+
+.index-search .list .allproduce .service-bd { position: absolute; left: 0; top: 50px; width: 220px; height: 462px; background-color: #f5f5f5; }
+
+.index-search .list .allproduce .service-bd ul li { list-style: none; padding: 0 5px; }
+
+.index-search .list .allproduce .service-bd ul li:hover { background: white; }
+
+.index-search .list .allproduce .service-bd ul li:hover h2, .index-search .list .allproduce .service-bd ul li:hover a { color: #ff3259; }
+
+.index-search .list .allproduce .service-bd ul li:hover a:hover { color: #ff3259; font-weight: bold; }
+
+.index-search .list .allproduce .service-bd h2 { line-height: 16px; }
+
+.index-search .list .allproduce .service-bd h2 a { font-size: 14px; font-family: 微软雅黑; color: #333; }
+
+.index-search .list .allproduce .service-bd p { display: block; font-weight: 400; font-size: 12px; height: 18px; line-height: 18px; border-bottom: 1px dotted #a0a0a0; padding-bottom: 12px; overflow: hidden; color: #a0a0a0; }
+
+.index-search .list .allproduce .service-bd p a { color: #a0a0a0; }
+
+.index-search .list .produce-top { float: left; height: 50px; width: 70%; }
+
+.index-search .list .produce-top ul li { list-style: none; float: left; margin: 0 25px; }
+
+.index-search .list .produce-top ul li a { color: darkslategrey; font-weight: bolder; }
+
+.index-search .list .produce-top ul li a:hover { color: #ff442a; cursor: pointer; }
+
+.index-carousel { padding-left: 6%; padding-bottom: 5%; height: 460px; width: 100%; background: #f5f5f5; }
+
+.index-carousel .adv { height: 460px; width: 980px; position: absolute; right: 68px; }
+
+.index-carousel .adv .swiper-slide img { height: 460px; width: 980px; }
+
+.index-produce { padding-left: 6%; background: #f5f5f5; }
+
+.index-right { position: fixed; width: 40px; height: 100%; background: black; right: 0; top: 0; padding-top: 16%; }
+
+.index-right span { display: block; color: white; padding: 5px 15px; font-weight: bolder; }
+
+.index-right span:last-of-type { color: red; }
+
+.index-right h4 { color: white; display: none; padding: 250px 3px; }
+
+#bigbody { background: #f5f5f5; padding-top: 20px; }
+
+#bigbody .buy { margin: 0 auto; width: 80%; background: white; height: 500px; }
+
+#bigbody .buy .buy-left { width: 48%; height: 100%; margin-right: 2%; float: left; }
+
+#bigbody .buy .buy-left .bigimg { padding: 0 30px; }
+
+#bigbody .buy .buy-left .smallimg .inner ul { list-style: none; }
+
+#bigbody .buy .buy-left .smallimg .inner ul li { float: left; }
+
+#bigbody .buy .buy-left .smallimg .inner ul li a img { display: block; width: 60px; height: 54px; border: 1px solid #e4e4e4; float: left; margin-right: 12px; border-radius: 2px; margin-top: 6px; text-align: center; }
+
+#bigbody .buy .buy-right { width: 50%; height: 100%; float: left; h3-color: #333; h3-font-size: 18px; h3-font-family: "microsoft yahei"; h3-line-height: 24px; }
+
+#bigbody .buy .buy-right .pit { width: 70px; height: 14px; line-height: 14px; display: block; font-size: 12px; color: #999; float: left; }
+
+#bigbody .buy .buy-right .mum { color: #f03468; font-size: 24px; font-weight: 600; line-height: 34px; }
+
+#bigbody .buy .buy-right .poor { color: #666; font-weight: 500; font-size: 14px; text-decoration: line-through; }
+
+#bigbody .buy .buy-right .clear .detial-number input { width: 24px; height: 18px; text-align: center; border: 1px solid #ccc; margin: 0; vertical-align: middle; outline: none; box-sizing: content-box; -webkit-appearance: textfield; text-rendering: auto; color: initial; letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block; }
+
+#bigbody .buy .buy-right .clear .detial-number a { display: inline-block; width: 20px; background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#f0f0f0)); text-align: center; padding: 2px; color: #000; text-decoration: none; cursor: pointer; font-weight: bolder; }
+
+#bigbody .buy .buy-right .btn .buynow { width: 140px; height: 46px; margin-right: 25px; line-height: 46px; font: 400 16px/44px 'microsoft yahei'; color: #f03468; border: 1px solid #f03468; background-color: #fff1f5; padding: 0 10px; cursor: pointer; display: inline-block; text-align: center; }
+
+#bigbody .buy .buy-right .btn .addcar { width: 140px; height: 46px; margin-right: 25px; line-height: 46px; font: 400 16px/44px 'microsoft yahei'; text-decoration: none; border: 1px solid #fa4678; background-color: #fa4678; display: inline-block; border-radius: 2px; text-align: center; color: #fff; }
+
+#bigbody .buy .buy-right h5 { color: #666; font-size: 14px; line-height: 30px; font-family: 'microsoft yahei'; }
+
+#bigbody .more { margin: 0 auto; width: 80%; height: 90%; }
+
+#bigbody .more .more-top { line-height: 44px; height: 44px; width: 100%; background: #000; opacity: .85; }
+
+#bigbody .more .more-top ul { list-style: none; }
+
+#bigbody .more .more-top ul .listyle { color: #f03468; background: white; }
+
+#bigbody .more .more-top ul li { float: left; padding: 0 20px; margin-right: 3px; font-size: 13px; font-weight: 600; color: white; cursor: hand; }
+
+#bigbody .more .more-dom { width: 100%; background: white; }
+
+#bigbody .more .more-dom .img { margin: 0 15%; }
+
+#bigbody .dibu { margin-left: 20px; }
+
+.service-abd { display: none; position: absolute; left: 0; top: 50px; width: 220px; height: 462px; background-color: #f5f5f5; }
+
+.service-abd ul li { list-style: none; padding: 0 5px; }
+
+.service-abd ul li:hover { background: white; }
+
+.service-abd ul li:hover h2, .service-abd ul li:hover a { color: #ff3259; }
+
+.service-abd ul li:hover a:hover { color: #ff3259; font-weight: bold; }
+
+.service-abd h2 { line-height: 16px; }
+
+.service-abd h2 a { font-size: 14px; font-family: 微软雅黑; color: #333; }
+
+.service-abd p { display: block; font-weight: 400; font-size: 12px; height: 18px; line-height: 18px; border-bottom: 1px dotted #a0a0a0; padding-bottom: 12px; overflow: hidden; color: #a0a0a0; }
+
+.service-abd p a { color: #a0a0a0; }
+
+.allproduce:hover .service-abd { display: block; }
+
+.catalog { height: 60px; width: 100%; padding-left: 6%; line-height: 60px; }
+
+.catalog a { font-size: 12px; color: #666; }
+
+.catalog span { font-size: 12px; border: 1px solid #666; padding: 5px 15px; }
+
+.listbox { width: 100%; height: 2000px; padding-left: 6%; }
+
+.listbox .listbox-left { width: 15%; height: 70%; float: left; border: 1px solid #e4e4e4; }
+
+.listbox .listbox-left h2 { color: #666; background: #f7f7f7; height: 38px; line-height: 38px; font-size: 14px; padding-left: 10px; margin-top: 0; }
+
+.listbox .listbox-left .cat-father { padding-left: 10px; }
+
+.listbox .listbox-left .cat-father h3 { height: 44px; line-height: 44px; }
+
+.listbox .listbox-left .cat-father h3 a { font-size: 14px; color: #666; }
+
+.listbox .listbox-left .cat-father ul { border-bottom: 1px solid #f5f5f5; }
+
+.listbox .listbox-left .cat-father ul li { list-style: none; overflow: hidden; width: 128px; height: 24px; line-height: 24px; }
+
+.listbox .listbox-left .cat-father ul li a { color: #666; font-size: 12px; }
+
+.listbox .listbox-right { float: left; width: 70%; height: 99%; margin-left: 10px; }
+
+.listbox .listbox-right .choose { border: 1px solid #e4e4e4; border-radius: 2px; margin-bottom: 20px; position: relative; }
+
+.listbox .listbox-right .choose .title { height: 50px; line-height: 50px; }
+
+.listbox .listbox-right .choose .title div { float: left; position: absolute; font-size: 14px; }
+
+.listbox .listbox-right .choose .title div:first-of-type { left: 15px; }
+
+.listbox .listbox-right .choose .title div:last-of-type { right: 15px; }
+
+.listbox .listbox-right .choose .logo, .listbox .listbox-right .choose .price, .listbox .listbox-right .choose .sort { height: 65px; border-top: 1px solid #e4e4e4; }
+
+.listbox .listbox-right .choose .logo .logo-type, .listbox .listbox-right .choose .price .logo-type, .listbox .listbox-right .choose .sort .logo-type { float: left; height: 100%; width: 15%; background: #f7f7f7; line-height: 65px; text-align: center; }
+
+.listbox .listbox-right .choose .logo .logo-list, .listbox .listbox-right .choose .price .logo-list, .listbox .listbox-right .choose .sort .logo-list { float: left; }
+
+.listbox .listbox-right .choose .logo .logo-list ul li, .listbox .listbox-right .choose .price .logo-list ul li, .listbox .listbox-right .choose .sort .logo-list ul li { list-style: none; float: left; height: 20px; width: 110px; font-size: 14px; }
+
+.listbox .listbox-right .filter { border: 1px solid #e4e4e4; height: 40px; width: 100%; background: #f7f7f7; }
+
+.listbox .listbox-right .filter .filter-list { float: left; }
+
+.listbox .listbox-right .filter .filter-list .select { background: white; color: #ed386a; }
+
+.listbox .listbox-right .filter .filter-list ul { margin: 0px -40px; }
+
+.listbox .listbox-right .filter .filter-list ul li { float: left; list-style: none; height: 40px; line-height: 40px; width: 70px; border-right: 1px solid #e4e4e4; text-align: center; font-size: 14px; }
+
+.listbox .listbox-right .filter .filter-list ul li:hover { color: #ed386a; background: white; }
+
+.listbox .listbox-right .filter .filter-price { float: left; margin-left: 50px; line-height: 40px; }
+
+.listbox .listbox-right .filter .filter-price .button { height: 23px; width: 45px; background: white; border: none; }
+
+.listbox .listbox-right .filter .filter-price .button:hover { border: 1px solid #ed386a; color: #ed386a; }
+
+.listbox .listbox-right .filter .filter-price input { height: 15px; width: 35px; }
+
+.listbox .listbox-right .filter .filter-choose { float: left; line-height: 40px; }
+
+.listbox .listbox-right .goods { margin-top: 10px; width: 100%; height: 90%; }
+
+.listbox .listbox-right .goods .pagination { padding-top: 960px; height: 20px; width: 100%; text-align: center; }
+
+.listbox .listbox-right .goods .pagination .upage, .listbox .listbox-right .goods .pagination .next-page { padding: 3px 5px; border: 1px solid gainsboro; }
+
+.listbox .listbox-right .goods .wrap-ul { list-style: none; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li { width: 200px; height: 300px; border: 1px solid gainsboro; float: left; margin: 5px 10px; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li:hover { border: 1px solid #ED386A; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li .pik { color: #f03468; font-size: 16px; font-weight: bold; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li .dark { color: #999; font-size: 12px; text-decoration: line-through; }
+
+.listbox .listbox-right .goods .wrap-ul .wrap-li a { color: #333; font-size: 12px; font-weight: bolder; }
+
+.sogo { height: 100px; width: 100%; padding: 0 27%; }
+
+.sogo .mysearch-bottom { width: 500px; height: 50px; background: #f7f7f7; padding: 2% 15%; }
+
+.sogo .mysearch-bottom .font span { color: #7d7d7d; font-size: 12px; }
+
+.sogo .mysearch-bottom .font span:first-of-type { color: #f03468; }
+
+.sogo .mysearch-bottom input { height: 31px; width: 330px; border: 2px solid #ff305f; }
+
+.sogo .mysearch-bottom input:last-of-type { color: white; width: 80px; background: #ff305f; margin-left: -8px; }
+
+body { color: #333; margin: 0; padding: 0; }
+
+.clearfix::after { content: ''; display: block; clear: both; }
+
+/*嵌套*/
+.header .logo { float: left; }
+
+.header .logo img { width: 80px; height: 80px; border-radius: 50%; }
+
+.header nav { float: left; margin: 20px 0 0 20px; }
+
+.header nav ul li { float: left; padding: 0 10px; line-height: 2; list-style: none; }
+
+.header nav ul li a { text-decoration: none; }
+
+.header nav ul li:last-child a { color: #f60; }
+
+.header nav ul li:last-child a:hover { color: #f60; }
+
+/*.header .logo{float:left;}
+.logo img{width:80px;height:80px;border-radius:50%;}
+.header nav{float:left;margin: 20px 0 0 20px;}
+.header nav ul li{float:left;padding:0 10px;line-height:2;list-style: none;}
+.header nav ul li:last-child a{color: #f60;}
+.header nav ul li a:hover{color:#f60;}*/

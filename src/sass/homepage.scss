@@ -1,0 +1,50 @@
+/*预处理
+	sass   less  stylus
+	编译sass文件所需工具：
+		gulp
+		gulp-sass
+*/
+@import 'login.scss';
+@import 'sign.scss';
+@import 'index.scss';
+@import 'produce.scss';
+@import 'details.scss';
+//变量
+$mainColor:#f60;
+
+body{color:#333;margin:0;padding:0;}
+
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+/*嵌套*/
+.header{
+	.logo{
+		float:left;
+		img{width:80px;height:80px;border-radius:50%;}
+	}
+	nav {
+		float:left;margin: 20px 0 0 20px;
+			ul {
+				li{
+					float:left;padding:0 10px;line-height:2;list-style: none;
+				    a{text-decoration:none ;}
+				  }
+				li:last-child
+				{
+					a{color: $mainColor;}
+					a:hover{color:$mainColor;}
+				}
+				
+			   }
+		}
+}
+
+/*.header .logo{float:left;}
+.logo img{width:80px;height:80px;border-radius:50%;}
+.header nav{float:left;margin: 20px 0 0 20px;}
+.header nav ul li{float:left;padding:0 10px;line-height:2;list-style: none;}
+.header nav ul li:last-child a{color: #f60;}
+.header nav ul li a:hover{color:#f60;}*/
